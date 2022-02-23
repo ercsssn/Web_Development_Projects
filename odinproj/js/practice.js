@@ -1,5 +1,17 @@
-let orayt=4;
+let user = prompt("Who's there?");
 
-orayt++;
+if (user == 'Admin') {
+    let password = prompt('Enter password');
 
-console.log(orayt);
+    if (password == "TheMaster") {
+        console.log("Welcome Master");
+    } else if (password == "Cancel") {
+        console.log("Cancelled");
+    } else {
+        console.log("Wrong Password");
+    }
+} else if (user == 'Cancel') {
+    console.log('Cancelled');
+} else {
+    console.log("I don't know you");
+}
