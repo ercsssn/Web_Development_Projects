@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Practice</title>
+</head>
+<body>
+    <script>
+        let askNum = prompt('Enter number:', 10);
+        num = Number(askNum);
+        nextNum: 
+        for (let i=2; i<=num; i++) {
+            for (let j=2 ; j<i; j++) {
+                if (i % j == 0) {
+                    continue nextNum;
+                }
+            }
+            alert(i)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //while (true) {
+          //  let num = prompt('Enter a number greater than 100', 0);
+            //num = Number(num);
+
+            //if (num <= 100) {
+              //  alert('Too low');
+                //continue;   
+            //} else {
+              //  alert('Nice!')
+                //break;
+           // }
+        //}
+    </script>
+</body>
+</html>
