@@ -1,17 +1,8 @@
-let user = prompt("Who's there?");
+let user = {
+    name: "John",
+    age: 30
+};
 
-if (user == 'Admin') {
-    let password = prompt('Enter password');
+let key = prompt("What do you want to know about the user?","name");
 
-    if (password == "TheMaster") {
-        console.log("Welcome Master");
-    } else if (password == "Cancel") {
-        console.log("Cancelled");
-    } else {
-        console.log("Wrong Password");
-    }
-} else if (user == 'Cancel') {
-    console.log('Cancelled');
-} else {
-    console.log("I don't know you");
-}
+alert( user[key] ); 
