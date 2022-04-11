@@ -1,8 +1,4 @@
-let user = {
-    name: "John",
-    age: 30
-};
+let obj = {};
 
-let key = prompt("What do you want to know about the user?","name");
-
-alert( user[key] ); 
+obj.__proto__ = 5;
+alert(obj.__proto__);
